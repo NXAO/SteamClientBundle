@@ -1,0 +1,15 @@
+#
+version: "3.7"
+
+services:
+    php:
+        image: steam_client_bundle:php7.4-fpm
+        hostname: php
+        environment:
+            - COMPOSER_MEMORY_LIMIT=-1
+        build:
+            context: ./php
+            dockerfile: Dockerfile
+        volumes:
+            - ../:/backend
+        working_dir: /backend
