@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Nxao\Component\SteamParser\DependencyInjection;
+namespace Nxao\Component\SteamClient\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -14,7 +14,7 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder('parsers');
+        $treeBuilder = new TreeBuilder('steam_clients');
 
         $treeBuilder->getRootNode()
 

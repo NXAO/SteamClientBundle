@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Nxao\Component\SteamParser;
+namespace Nxao\Component\SteamClient;
 
-use Nxao\Component\SteamParser\DependencyInjection\Compiler\WriterRegistryPass;
+use Nxao\Component\SteamClient\DependencyInjection\Compiler\WriterRegistryPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class NxaoSteamParserBundle extends Bundle
+class NxaoSteamClientBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {

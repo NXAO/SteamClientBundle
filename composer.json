@@ -1,9 +1,12 @@
 {
-    "name": "nxao/steam-parser-bundle",
+    "name": "nxao/steam-client-bundle",
     "type": "library",
-    "description": "Nxao SteamParser component",
-    "homepage": "https://symfony.com",
+    "description": "Nxao SteamClient component",
+    "homepage": "https://github.com/NXAO/SteamClientBundle",
     "license": "MIT",
+    "keywords" : [
+        "steam,steam-api,symfony-bundle,symfony5,annotations,php7,php-library"
+    ],
     "authors": [
         {
             "name": "Oleg Charnyshevich",
@@ -15,7 +18,7 @@
     },
     "require-dev": {},
     "autoload": {
-        "psr-4": { "Nxao\\Component\\SteamParser\\": "" },
+        "psr-4": { "Nxao\\Component\\SteamClient\\": "" },
         "exclude-from-classmap": [
             "/Tests/"
         ]

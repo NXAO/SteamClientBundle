@@ -1,4 +1,4 @@
-Getting Started With SteamParserBundle
+Getting Started With SteamClientBundle
 ===================================
 
 ## Installation
