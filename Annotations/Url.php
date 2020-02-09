@@ -10,8 +10,10 @@ namespace Nxao\Component\SteamClient\Annotations;
  */
 class Url
 {
+    public string $url;
+
     public function __construct(array $values)
     {
-
+        $this->url = $values['value'];
     }
 }

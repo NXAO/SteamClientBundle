@@ -15,9 +15,24 @@ class ClientReader
         $this->annotationReader = $annotationReader;
     }
 
-    public function getClassAnnotations()
+    public function getAnnotations(string $class): array 
     {
+        $methodAnnotations = [];
+        $reflClass = new \ReflectionClass($class);
 
-        return;
+        $classAnnotations = $this->annotationReader->getClassAnnotations($reflClass);
+
+        foreach ($reflClass->getMethods() as $method) {
+            $anotations = $this->annotationReader->getMethodAnnotations($method);
+
+            if(!$methodAnnotations){
+                $methodAnnotations = $anotations;
+            }else {
+                $methodAnnotations = [$methodAnnotations, ...$anotations];
+            }
+        }
+
+
+        return [$classAnnotations, $methodAnnotations];
     }
 }
