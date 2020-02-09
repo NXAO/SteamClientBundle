@@ -1,0 +1,29 @@
+{
+    "name": "nxao/steam-parser-bundle",
+    "type": "library",
+    "description": "Nxao SteamParser component",
+    "homepage": "https://symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleg Charnyshevich",
+            "email": "admin@love4dev.ru"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": { "Nxao\\Component\\SteamParser\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
