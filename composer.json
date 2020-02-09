@@ -5,7 +5,7 @@
     "homepage": "https://github.com/NXAO/SteamClientBundle",
     "license": "MIT",
     "keywords" : [
-        "steam,steam-api,symfony-bundle,symfony5,annotations,php7,php-library"
+        "steam,steam-api,symfony-bundle,symfony5,annotations,php7,php-library,api-client,steam-client"
     ],
     "authors": [
         {
