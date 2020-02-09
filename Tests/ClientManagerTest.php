@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace Nxao\Component\SteamClient\Tests;
 
+use Doctrine\Common\Annotations\AnnotationReader;
 use Nxao\Component\SteamClient\ClientManager;
 use Nxao\Component\SteamClient\Clients\SteamApi;
+use Nxao\Component\SteamClient\Service\ClientReader;
 use PHPUnit\Framework\TestCase;
 
-class ClientManagerTest extends \Symfony\Bundle\FrameworkBundle\Test\KernelTestCase
+class ClientManagerTest extends TestCase
 {
     public $clientManager;
 
@@ -16,7 +18,7 @@ class ClientManagerTest extends \Symfony\Bundle\FrameworkBundle\Test\KernelTestC
     {
         parent::setUp();
 
-        static::bootKernel();
+        $this->clientManager = new \Nxao\Component\SteamClient\ClientManager(new ClientReader(new AnnotationReader()));
     }
 
     protected function tearDown(): void
