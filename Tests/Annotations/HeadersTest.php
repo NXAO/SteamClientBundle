@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Nxao\Component\SteamClient\Tests\Annotations;
 
-class Url
+use PHPUnit\Framework\TestCase;
+
+class HeadersTest extends TestCase
 {
 
 }
